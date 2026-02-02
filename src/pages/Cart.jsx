@@ -20,15 +20,15 @@ const Cart = () => {
     if (cartItems.length === 0) {
         return (
             <main className="container mx-auto px-4 py-8 text-center text-gray-500 min-h-[50vh] flex flex-col justify-center items-center">
-                <h1 className="text-2xl font-bold mb-4 text-gray-900">Shopping Cart</h1>
-                <p>Your cart is empty.</p>
+                <h1 className="text-2xl font-bold mb-4 text-gray-900">Mon Panier</h1>
+                <p>Votre panier est vide.</p>
             </main>
         );
     }
 
     return (
         <main className="container mx-auto px-4 py-8 max-w-3xl pb-32">
-            <h1 className="text-2xl font-bold mb-6 text-gray-900">Shopping Cart</h1>
+            <h1 className="text-2xl font-bold mb-6 text-gray-900">Mon Panier</h1>
 
             <div className="space-y-4">
                 {cartItems.map((item) => (
@@ -44,7 +44,7 @@ const Cart = () => {
                             <button
                                 className="text-red-400 hover:text-red-600 p-1"
                                 onClick={() => handleRemove(item.id)}
-                                aria-label="Remove item"
+                                aria-label="Supprimer l'article"
                             >
                                 <FaTrash />
                             </button>
@@ -53,7 +53,7 @@ const Cart = () => {
                                 <button
                                     className="w-6 h-6 flex items-center justify-center font-bold text-gray-600 hover:text-black"
                                     onClick={() => handleQuantityChange(item.id, item.quantity - 1)}
-                                    aria-label="Decrease quantity"
+                                    aria-label="Diminuer la quantité"
                                 >
                                     -
                                 </button>
@@ -61,7 +61,7 @@ const Cart = () => {
                                 <button
                                     className="w-6 h-6 flex items-center justify-center font-bold text-gray-600 hover:text-black"
                                     onClick={() => handleQuantityChange(item.id, item.quantity + 1)}
-                                    aria-label="Increase quantity"
+                                    aria-label="Augmenter la quantité"
                                 >
                                     +
                                 </button>
@@ -77,7 +77,7 @@ const Cart = () => {
                     <span className="text-2xl font-bold text-gray-900">${totalAmount.toFixed(2)}</span>
                 </div>
                 <button className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-full text-lg shadow-lg active:scale-95 transition-all max-w-3xl mx-auto block">
-                    Checkout
+                    Passer la commande
                 </button>
             </div>
         </main>
