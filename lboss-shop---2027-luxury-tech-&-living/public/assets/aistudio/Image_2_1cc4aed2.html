@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Manrope:wght@100..900&family=Sora:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#e0e2ed","surface-tint":"#fbbc0e","surface":"#10131b","on-secondary-fixed-variant":"#4816cb","surface-container-high":"#272a32","on-primary":"#402d00","surface-container-highest":"#32353d","background":"#10131b","on-tertiary-container":"#005575","on-tertiary-fixed":"#001e2c","on-error-container":"#ffdad6","secondary":"#cabeff","primary-container":"#f5b700","secondary-fixed":"#e6deff","surface-container-low":"#181b24","outline":"#9c8f78","outline-variant":"#504532","secondary-container":"#4816cb","error":"#ffb4ab","inverse-on-surface":"#2d3039","on-secondary":"#31009a","tertiary-container":"#6bccff","on-tertiary-fixed-variant":"#004c69","on-primary-fixed-variant":"#5c4300","surface-container":"#1c1f28","tertiary":"#b8e3ff","inverse-surface":"#e0e2ed","surface-variant":"#32353d","tertiary-fixed-dim":"#7bd0ff","on-error":"#690005","secondary-fixed-dim":"#cabeff","on-tertiary":"#00354a","surface-container-lowest":"#0b0e16","primary-fixed-dim":"#fbbc0e","on-secondary-container":"#b9aaff","on-surface-variant":"#d4c5ac","on-primary-container":"#664a00","on-secondary-fixed":"#1c0062","primary":"#ffd88a","inverse-primary":"#795900","surface-dim":"#10131b","primary-fixed":"#ffdea0","tertiary-fixed":"#c4e7ff","on-surface":"#e0e2ed","error-container":"#93000a","surface-bright":"#363942","on-primary-fixed":"#261a00"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"3rem",margin:"4rem","gutter-sm":"1rem","margin-sm":"1rem","space-lg":"2rem","space-2xl":"4rem","space-sm":"1rem","space-md":"1.5rem","space-3xl":"6rem","space-xs":"0.5rem","margin-md":"2rem",gutter:"1.5rem"},fontFamily:{"body-lg":["Manrope"],"label-lg":["JetBrains Mono"],"headline-lg":["Sora"],"display-xl":["Sora"],"headline-md":["Sora"],"headline-xl-mobile":["Sora"],"body-md":["Manrope"],"headline-xl":["Sora"],"headline-sm":["Sora"],"display-xl-mobile":["Sora"],"label-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-sm":["Manrope"],"display-lg":["Sora"],"display-lg-mobile":["Sora"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"label-lg":["16px",{lineHeight:"22px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-xl":["72px",{lineHeight:"80px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"display-xl-mobile":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"800"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"label-md":["14px",{lineHeight:"18px",letterSpacing:"0.03em",fontWeight:"500"}],"body-sm":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-low/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-xs"><img alt="LBOSS SHOP Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5wpnqOGybzLijeN7gp4hRZqXVHckigJ3y_DgvYqst68XrP0TGo98YlBUffYYFi1nepWPlL_35R_aruWRAZOWwUDGIgJXTwTyBiIOwl-7UDJGMloZwEsmn7aD8bEEB5s-J055JsZ8EwasfUrD1vrj5bg3RHa5B8r0k9uf2A0jrAV22r55nKS-xL3oK8u7ch9_Sd8vdb4FsBDOsFxpcPAU509X-A7T_f3BaFugGknEn-SjMXStOrHPrElE"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold hidden sm:inline-block">LBOSS</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="electronics" href="#">Electronics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cyber-fashion" href="#">Cyber Fashion</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="precision-living" href="#">Precision Living</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#">Audio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault-exclusives" href="#">Vault Exclusives</a></nav></div><div class="flex-1 max-w-2xl hidden lg:flex flex-col gap-1"><div class="relative flex items-center w-full bg-surface-container rounded-xl px-space-sm py-2 focus-within:ring-2 focus-within:ring-secondary"><span class="material-symbols-outlined text-outline mr-space-xs select-none">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search 2027 luxury tech, flagship devices, designer apparel..." type="text"/><kbd class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded bg-surface-container-high select-none">⌘K</kbd></div><div class="flex items-center gap-space-xs px-1"><span class="font-label-sm text-label-sm text-outline-variant">Trending:</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="titanium-watch-pro" href="#">Titanium Watch Pro</a><span class="text-outline-variant text-xs">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="cyberdeck-16" href="#">CyberDeck 16</a><span class="text-outline-variant text-xs">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="obsidian-headphones" href="#">Obsidian Headphones</a></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-xs py-1 rounded-lg"><span class="material-symbols-outlined text-base">attach_money</span><span>USD $</span></div><button aria-label="Theme Toggle" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">dark_mode</span></button><a aria-label="Wishlist" class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="absolute -top-1 -right-1 flex items-center justify-center h-4 min-w-4 px-1 rounded-full bg-secondary-container font-label-sm text-label-sm text-secondary-fixed leading-none">3</span></a><a aria-label="Interactive Cart" class="relative flex items-center gap-space-xs px-space-sm py-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-primary-container">shopping_bag</span><span class="font-label-md text-label-md text-primary font-bold">$3,420</span><span class="flex items-center justify-center h-5 w-5 rounded-full bg-primary-container font-label-sm text-label-sm text-on-primary-container font-bold shadow-[0_0_12px_rgba(245,183,0,0.4)]">2</span></a><div class="relative flex items-center gap-space-xs pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qH0OhumjwcapBPu5vLEw8BQOeHQiWhbtcLzDW11QrHkjxHH8E_V3kk1hQ8XLQh1_P7PVl-kUwLv6tww1zTu5JFO6LidtuW2WZfRI1XhRuvccIPnBCWSjJkhCK2WvQBC0AYaHaXspA6rpteBQ-eiNNRKeO6kUYR_cMb_N2CnbqArKywsdg_Jl4IZ-tHjTBA4I4xoNXjnCfWiZTBk_og-nLCa1VziulQv1kqvIqe26ufXAFYhJCoy7yw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface"></span></div><span class="hidden 2xl:inline-block font-label-sm text-label-sm text-primary font-semibold">VIP EXECUTIVE</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- AMBIENT TOP LIGHTING GLOW LAYER -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/4 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute -top-20 right-1/4 w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-[130px] pointer-events-none"></div>
+<!-- 1. HERO SECTION -->
+<section class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin pt-space-lg pb-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Left Column: Editorial Headline & Actions -->
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              2027 Executive Keynote Drop
+            </span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest hidden sm:inline-block">/ PRIVATE CATALOGUE</span>
+</div>
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase">
+            Defining <span class="bg-gradient-to-r from-primary via-primary-fixed-dim to-secondary bg-clip-text text-transparent">2027 Luxury</span> Tech & Living
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Engineered for commanders of industry. Discover the limited apex collection of neural optics, obsidian audio, and cybernetic timepieces crafted with aerospace-grade metallurgy.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="group relative inline-flex items-center justify-center gap-space-xs px-space-md py-4 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-label-lg font-bold shadow-[0_12px_32px_-8px_rgba(245,183,0,0.35)] hover:-translate-y-0.5 transition-all duration-200" type="button">
+<span>Explore The 2027 Collection</span>
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-md py-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-sm text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary">play_circle</span>
+<span>Watch Keynote (4K HDR)</span>
+</button>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-lg">
+<div class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl">diamond</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">100% Grade 5</span>
+<span class="font-body-sm text-body-sm text-outline">Titanium & Ceramic</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">neurology</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold"><0.8ms Latency</span>
+<span class="font-body-sm text-body-sm text-outline">Sub-ms Neural Sync</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-2xl">shield</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Armored Transit</span>
+<span class="font-body-sm text-body-sm text-outline">Complimentary Global</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: Apex Featured Product Hologram Card -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative rounded-2xl bg-surface-container p-space-md shadow-2xl flex flex-col gap-space-md overflow-hidden">
+<!-- Background Radial Glow -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<!-- Top Pill Header -->
+<div class="flex items-center justify-between z-10">
+<span class="px-space-xs py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+                APEX HARDWARE // SPEC 01
+              </span>
+<div class="flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-highest text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">battery_charging_full</span>
+<span>98% Efficiency</span>
+</div>
+</div>
+<!-- Hero Image Representation with Scrim & Depth -->
+<div class="relative w-full h-[380px] rounded-xl overflow-hidden bg-surface-container-lowest flex items-center justify-center group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Futuristic luxury titanium smart watch resting on dark basalt stone with subtle gold accents, neon violet digital holographic watch face interface displaying biomedical telemetry and orbital clock, dramatic moody studio lighting, 8k product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8oyg0195KadT23PDjNG34Wp7emHnjg910xGen4g_jGOE1GDubFV7rTYxyZd38uVp7sa8Kk5mYh1tIOvzggvoOFf6JRb5wWB4xZS_lWPSMlA8RSfIejpCZCgBk1GzKVpvgoLX8labNDWdG4mWX97ooG_g04m9E1OdvHjunMnn570dtS8nxDJaKBkMDhS_xbOOkdM1dLthbM-ZHGugHeNtuznwyDNvwv2VgueuiFtAlsv76yfbRokenTw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<!-- Floating Hologram Telemetry HUD Inside Visual -->
+<div class="absolute bottom-4 left-4 right-4 p-space-sm rounded-xl bg-surface-container/90 backdrop-blur-md flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">CHASSIS CORE</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Forged Damascus Obsidian</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">SENSOR MATRIX</span>
+<span class="font-label-md text-label-md text-primary font-bold">Neural Octa-Sync</span>
+</div>
+</div>
+</div>
+<!-- Apex Product Detail & Quick Purchase CTA -->
+<div class="flex flex-col gap-space-xs z-10">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">LBOSS LABS BESPOKE</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Apex Chrono X-1 Neural</h3>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary font-bold">$2,499.00</span>
+<span class="font-label-sm text-label-sm text-outline line-through block">$2,899.00</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(128 elite reviews)</span>
+</div>
+<span class="font-label-sm text-label-sm text-error px-2 py-0.5 rounded-full bg-error-container/40 font-bold">
+                  Only 3 Left In Vault
+                </span>
+</div>
+<!-- Real-time Progress Bar -->
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="h-full bg-gradient-to-r from-primary to-secondary w-[88%] rounded-full"></div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-sm">
+<button class="flex-1 py-3.5 px-space-md rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-label-lg font-bold text-center transition-colors" type="button">
+                  Instant Vault Checkout
+                </button>
+<button aria-label="Save to Vault Wishlist" class="p-3.5 rounded-xl bg-surface-container-highest hover:bg-surface-bright text-on-surface transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 2. BRAND TRUST STRIP -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Trust Card 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Armored Delivery</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">White-glove bonded courier. Complimentary on orders over $500.</p>
+</div>
+</div>
+<!-- Trust Card 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">encrypted</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Vault Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">Quantum-safe encrypted checkout with biometric authentication.</p>
+</div>
+</div>
+<!-- Trust Card 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">assignment_return</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">30-Day Bespoke Returns</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">Zero-friction reverse logistics with secure at-home intake.</p>
+</div>
+</div>
+<!-- Trust Card 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">24/7 VIP Concierge</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">Direct private line to dedicated hardware product specialists.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. CURATED CATEGORY TILES -->
+<section class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin py-space-3xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">ARCHITECTURAL DOMAINS</span>
+<h2 class="font-display-lg text-display-lg text-on-surface uppercase tracking-tight">Curated Portfolios</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Select from five precision-crafted disciplines engineered for seamless high-performance living.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<!-- Category 1 -->
+<a class="group relative rounded-2xl bg-surface-container overflow-hidden p-space-md flex flex-col justify-between min-h-[360px] hover:bg-surface-container-high transition-all duration-300" href="#">
+<div class="relative z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface">24 Artifacts</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" data-alt="Futuristic cyber electronics sleek quantum microchip computer deck on dark metallic surface with violet fiber optic reflections, ultra minimalist macro photograph" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMniKju0L7fiFDmvlKYdz9tvOejCQ8STPeiLYUELvYfni9TwoDPsfBwHeLFTKwx-zDTcOJ8MUZdvH456e9TEM8gmxKJEt5qPR-S9fr0Q1JYZV6cTeAJ0wvJyCeFCYd4TsYjlRT5_zKchvNGIIM4oiF_iJ4cp403MZKxJi-kx4Wtrh55MusKq16D5x8D0gS0DiCUSyjdU2W7qnGRztkPDtG5dwFbOBE3dUkeVZ54lSWiIK78RV3XH0cPg')"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">01 // DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Cyber Electronics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Neural decks & quantum processors</p>
+</div>
+</a>
+<!-- Category 2 -->
+<a class="group relative rounded-2xl bg-surface-container overflow-hidden p-space-md flex flex-col justify-between min-h-[360px] hover:bg-surface-container-high transition-all duration-300" href="#">
+<div class="relative z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface">18 Garments</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" data-alt="High fashion matte black cybernetic trench coat with subtle carbon weave patterns and gold zipper hardware displayed on a dark luxury architectural mannequin, moody studio lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ1JAXB72BsW-4r0kG5sNsiQnIkt0idu0IZQE9Hi6TYAsTL4r1ShIbPB0GK3zqKdUEIenFmcvsUhyVOpdahBnzzSyYC9cOML4DjZ9wTLoTix_iV8XSL1DGQEJR6HkWgfzJ1Ik91haHgoLSc71lRVGuTHkTLTsUiD7TVeMHOW59qYsqn4kRA5ZEDdG9ILm3S81Ue2cVBqLzCEa2eXCrI1-Ud01K-7c9hF3WWsbI65wvF1TyYSqSF7-uTQ')"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">02 // DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Haute Cyber-Fashion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ballistic silk & thermoregulating wear</p>
+</div>
+</a>
+<!-- Category 3 -->
+<a class="group relative rounded-2xl bg-surface-container overflow-hidden p-space-md flex flex-col justify-between min-h-[360px] hover:bg-surface-container-high transition-all duration-300" href="#">
+<div class="relative z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface">12 Habitats</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" data-alt="Ultra luxury modern architectural interior furniture piece, monolithic obsidian desk with integrated ambient warm gold LED illumination, hyper-minimalist executive suite" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEHCsOXfITVhbDGBDhqOBTExGmqK780MPPVIVCIMKxFv9dSzOAYD6dT6FLK75uYiApndsL4AVU72kRIVDA2VW-3-OL9xdpS1JjcJf8GIv4aouxwYBqdqdMEdoWpU63zAfIzc69GH5UXjfzq0sSudFVypPz_yjMV_We0lnbK3WSPzAYtcrTbPBVWxLTwKkf2WxFQ6-o_OMqcA3qSzAPVmXxknGFcDYqMJ1_XZnqbjKbUW_jY-uDT8mk-g')"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">03 // DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Precision Living</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kinetic furnishings & environmental air units</p>
+</div>
+</a>
+<!-- Category 4 -->
+<a class="group relative rounded-2xl bg-surface-container overflow-hidden p-space-md flex flex-col justify-between min-h-[360px] hover:bg-surface-container-high transition-all duration-300" href="#">
+<div class="relative z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface">15 Modules</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" data-alt="Matte obsidian high-end over-ear planar magnetic headphones with gold mesh accents, suspended in dramatic dark environment with subtle purple volumetric lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZLA5uWpOp2TpHoyFiwsQbCdkDuTUwNCx6wl4ih1CbgG9mTOJgBCQ1AyFhdlXQItIjmKMboidJA7xFj9l1ZkR85lq0OhAIRc6_wBZn0_FPuPKTSEMXpi5su6GSKsy38NA0dyEov_3QptlTrUINIBeNZIyo-ebzcRQqX9eFibNNcK69Llg4pyMYUKChx0b7nb1ab-VMHVO3mntHZDpZQBITHs76xzCf2xuXvYINR5Cc_79QljNsAPqqJQ')"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">04 // DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Acoustic Vault</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lossless spatial drivers & resonance chambers</p>
+</div>
+</a>
+<!-- Category 5 -->
+<a class="group relative rounded-2xl bg-surface-container overflow-hidden p-space-md flex flex-col justify-between min-h-[360px] hover:bg-surface-container-high transition-all duration-300" href="#">
+<div class="relative z-10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface">31 Additions</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" data-alt="Bespoke luxury carbon fiber wallet and titanium key fob hardware with micro gold engraving, arranged on dark slate with moody directional lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADqcs8H1O7_LbHxfRFPy2ZwXd6YcxEG6YvW_fRo99Wo8ivwAGfnTRBUNjQvs47cizLfxx9VvYE9-fGI37SUKNMZzTT3Xvw-MElefdxLabJQe151uXSbeRepwb387rHKt1iRZk0SgqXN4G7DUZFkROMY6L5MEomJ3MOKS2iaw6NpdTZft7LgSUxtoHpKUoHpCL4Us5VpnqJ-Lt9rDGqb34Z1dAXE_2JrgOtr9Dlx1gt6HJ2jgtxBQ8J4A')"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">05 // DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Bespoke Goods</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Titanium everyday carry & biometric wallets</p>
+</div>
+</a>
+</div>
+</section>
+<!-- 4. TRENDING APEX GEAR & PRODUCT CARDS (API DATA MODEL) -->
+<section class="w-full bg-surface-container-low py-space-3xl">
+<div class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin">
+<!-- Section Header with Filters -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">LIVE CATALOG FEED</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-surface uppercase tracking-tight">Trending Apex Gear</h2>
+</div>
+<!-- Filter Pill Chips -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-space-sm py-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold shadow-sm" type="button">All Flagships</button>
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Neural Tech</button>
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Acoustics</button>
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Wearables</button>
+</div>
+</div>
+<!-- Flagship 4-Card Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- CARD 1: Apex Chrono X-1 -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300 shadow-md">
+<div class="flex flex-col gap-space-sm">
+<!-- Header Badges -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-error-container/40 text-error font-semibold">
+                Only 3 left
+              </span>
+<button aria-label="Toggle Wishlist" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<!-- Product Media Showcase -->
+<div class="relative w-full h-56 rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Apex Chrono X-1 smart watch with dark titanium body, sapphire crystal face with amber glowing interface, sitting on dark textured stone, cinematic studio product render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRAFkR3wXDUZHAQAu2F2W5MT0kanPR2-YYwrkO0tl-5Do-_gHjGxUUwsH4l6R0bfGyXKokapV12QVWH45i_GMKsi2MB_c-r7qBcmZgPFaBCLBkrvjXp21Rd-wsWGY8ZYx4LDSgBIap8z9dt7PU0CfbKzCbaMRVU6C9WpSh5qrH0zWJAaLN3FrKj5qe8LEKhk6zuEvHfYFa_MHq_Ny-3pWaYte9O49OnDqxJ713TIMURwzl1BBwXwDM-A"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container/80 backdrop-blur font-label-sm text-label-sm text-primary">
+                14% OFF
+              </span>
+</div>
+<!-- Metadata Info -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">LBOSS LABS</span>
+<span class="font-body-sm text-body-sm">Electronics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Apex Chrono X-1</h3>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-outline">(128 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Price & Action CTA -->
+<div class="flex flex-col gap-space-xs pt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">$2,499.00</span>
+<span class="font-label-sm text-label-sm text-outline line-through">$2,899.00</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-label-md font-bold flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Obsidian Spatial Pro Headset -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300 shadow-md">
+<div class="flex flex-col gap-space-sm">
+<!-- Header Badges -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Stock
+              </span>
+<button aria-label="Toggle Wishlist" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<!-- Product Media Showcase -->
+<div class="relative w-full h-56 rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Obsidian spatial pro studio audiophile headphones in pure matte black with gold internal driver accents resting on dark obsidian plinth, high end luxury audio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7VQk9BfG0-bVHiqFqWLnSELInuNJR0IGBNCyOwDcJfWCi4Zp2AXpIr3UJ7G-y0FxteoDQtdw29grfZ5S1NIyhMeZgnW6-nG-jLDZHXc8uGcQfF5G6u5zS5YngdxdVq4OhaAXqwjz6BmwkDvZ8rDVUjtcy6Ha5Hp5hA2WCfkegz6UzR89cjWUbCdrD2ll-kDJfR-PBjDmuOAtco1pqRYOxwmY5-ycK9vnNJ3Guih9NVojJqPP28-F84Q"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container/80 backdrop-blur font-label-sm text-label-sm text-secondary">
+                Spatial 3D Sound
+              </span>
+</div>
+<!-- Metadata Info -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">AETHER ACOUSTICS</span>
+<span class="font-body-sm text-body-sm">Audio</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Obsidian Spatial Pro</h3>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+<span class="font-label-sm text-label-sm text-outline">(64 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Price & Action CTA -->
+<div class="flex flex-col gap-space-xs pt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">$890.00</span>
+<span class="font-label-sm text-label-sm text-outline">VAT Inc.</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-headline-sm text-label-md font-bold flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: Kevlar Cyber Trench V2 -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300 shadow-md">
+<div class="flex flex-col gap-space-sm">
+<!-- Header Badges -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container text-secondary-fixed font-bold">
+                New Arrival 2027
+              </span>
+<button aria-label="Toggle Wishlist" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<!-- Product Media Showcase -->
+<div class="relative w-full h-56 rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury Kevlar Cyber Trench coat in dark anthracite colorway with ergonomic storm collar and gold titanium zipper sliders, editorial fashion runway lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUdPyVrzlB-EvYWt5IYl9fZDjt0aEGYl3uGSdojdCIcsfYxhcToXjD9TTAm-WS3c4JaZggbDq-pbWYdlReseG1-kdOT-exF0GpeC0qrpNV_M2-YY1py3ojTVUZVIcm36s2XFOsK-JNJPHZlduTfXsl3QhZQ_nRVSbgzKvKCjqR5Rk5RkickFL8WrOGvag4m_DzS_MkRen8fD73vRH5OVliw1KUeJ1UE2v_NJ8nWilePtlcR25oc6Nc-Q"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container/80 backdrop-blur font-label-sm text-label-sm text-primary">
+                15% OFF
+              </span>
+</div>
+<!-- Metadata Info -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">LBOSS COUTURE</span>
+<span class="font-body-sm text-body-sm">Cyber Fashion</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Kevlar Cyber Trench V2</h3>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-outline">(42 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Price & Action CTA -->
+<div class="flex flex-col gap-space-xs pt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">$1,350.00</span>
+<span class="font-label-sm text-label-sm text-outline line-through">$1,600.00</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-headline-sm text-label-md font-bold flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+<span>Add to Cart</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Zero-G Ergonomic Throne -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300 shadow-md">
+<div class="flex flex-col gap-space-sm">
+<!-- Header Badges -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-bold">
+                Limited 2027 Run
+              </span>
+<button aria-label="Toggle Wishlist" class="p-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<!-- Product Media Showcase -->
+<div class="relative w-full h-56 rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic ergonomic command chair crafted with matte forged carbon fiber and black aniline leather, sculpted spine mechanics with subtle purple LED ambient spine lighting, 8k product render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQbXEpVdiGsE-IQ2iuRt689zsWVE00mBf6sz0m9XMHIqFlZzNlvWMsntZ6hB21QcQ-pAtQfq-lfLbN6tkhWPk7vVR2CHbanTdfAx_5PlNXduco1wkpH2xMymkp5h2juSUg89zk9e9dNX4mEL0QjKMQE77Horz5PRPSJnPRPCwr6MCTc_2nLncShX-vZdgCg6bfDFf3hY5zsHT0UgZE6ELKIKS-GyiSSdcnRjYeSnXoxgiCXNvdhzfZ_Q"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container/80 backdrop-blur font-label-sm text-label-sm text-tertiary">
+                Bespoke Order
+              </span>
+</div>
+<!-- Metadata Info -->
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">MONOLITH LIVING</span>
+<span class="font-body-sm text-body-sm">Precision Living</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Zero-G Ergonomic Throne</h3>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-sm text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-label-sm text-label-sm text-outline">(19 reviews)</span>
+</div>
+</div>
+</div>
+<!-- Price & Action CTA -->
+<div class="flex flex-col gap-space-xs pt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">$3,800.00</span>
+<span class="font-label-sm text-label-sm text-outline">Custom Sized</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-headline-sm text-label-md font-bold flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+<span>Reserve Unit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HOT DEALS OF THE SEASON (COUNTDOWN BANNER) -->
+<section class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin py-space-3xl w-full">
+<div class="relative rounded-3xl bg-surface-container overflow-hidden p-space-lg md:p-space-2xl shadow-2xl">
+<!-- Ambient Backlight -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Deal Copy & Timer -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">
+              -25% VIP PRIVILEGE
+            </span>
+<span class="font-label-sm text-label-sm text-outline">SEASONAL FLASH VAULT DROP</span>
+</div>
+<h2 class="font-display-lg text-display-lg text-on-surface uppercase tracking-tight">
+            Neural Sensory Rig <span class="text-primary">Pro 2027</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Complete high-fidelity sensory deck with dual haptic gloves and 16K retinal waveguide glasses. Precision tuned for virtual boardrooms and spatial creative mastery.
+          </p>
+<!-- Interactive Live Countdown Ticker -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Window Closes In:</span>
+<div class="flex items-center gap-space-xs" id="flash-timer">
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high min-w-[76px]">
+<span class="font-headline-lg text-headline-lg font-bold text-primary" id="timer-hours">14</span>
+<span class="font-label-sm text-label-sm text-outline">HOURS</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-outline">:</span>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high min-w-[76px]">
+<span class="font-headline-lg text-headline-lg font-bold text-primary" id="timer-minutes">22</span>
+<span class="font-label-sm text-label-sm text-outline">MIN</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-outline">:</span>
+<div class="flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high min-w-[76px]">
+<span class="font-headline-lg text-headline-lg font-bold text-primary" id="timer-seconds">45</span>
+<span class="font-label-sm text-label-sm text-outline">SEC</span>
+</div>
+</div>
+</div>
+<!-- Price & Claim CTA -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-xl text-headline-xl font-bold text-primary">$4,950.00</span>
+<span class="font-headline-md text-headline-md text-outline line-through">$6,600.00</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Includes 3-Year Zero-Fault Concierge Vault</span>
+</div>
+<button class="px-space-lg py-4 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-label-lg font-bold shadow-[0_12px_32px_-8px_rgba(245,183,0,0.35)] transition-all" type="button">
+              Claim Flash Privilege
+            </button>
+</div>
+</div>
+<!-- Deal Visual Imagery -->
+<div class="lg:col-span-5 relative mt-space-lg lg:mt-0">
+<div class="relative w-full h-[400px] rounded-2xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Futuristic high-end virtual reality glass visor resting near aerospace haptic input devices on matte obsidian reflective floor, volumetric amber and violet neon lighting, hyper detailed tech render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQMcFRcJ-7CQbRdGuEVOD3cntcUffa2kIfwmd-bwIfs_H6xLkv7Xs5Um8nhKcDM_sEh7M0_khncajNp7Z1WUISxKxpGz9S2dfqEeM5NIzpnspJ6X1bxgZyaQZqRMsZn0MB2qG873jnNkAQvtCKm9EGp69B3cTHE3AtJcjIVIMvbSN74JJldTfH_37d3Fyul18w9i2f8q4HDHai5M_ZMzN07SFt5P-DYranEkdmm1QyN90evejkgN2Dsg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-4 right-4 p-space-xs rounded-xl bg-surface-container-high/90 backdrop-blur font-label-sm text-label-sm text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>Allocation: 12 / 50 Units Left</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. VIP BOSS CLUB NEWSLETTER STRIP -->
+<section class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin pb-space-3xl w-full">
+<div class="rounded-3xl bg-surface-container-low p-space-lg md:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl shadow-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">ENCRYPTED VIP ALLOCATION</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-on-surface font-bold">
+          Join The Inner Sovereign Network
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Receive confidential firmware notifications, private unlisted batch invites, and an immediate $200 welcome credit for your first vault transaction.
+        </p>
+</div>
+<div class="w-full lg:max-w-md flex flex-col gap-space-xs">
+<form class="flex flex-col sm:flex-row gap-space-xs" onsubmit="event.preventDefault(); alert('Terminal Handshake Complete. $200 VIP Voucher Dispatched.');">
+<input class="flex-1 bg-surface-container rounded-xl px-space-md py-3.5 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="Enter sovereign email terminal..." required="" type="email"/>
+<button class="px-space-md py-3.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-label-md font-bold whitespace-nowrap transition-colors shadow-md" type="submit">
+            Claim $200 Credit
+          </button>
+</form>
+<div class="flex items-center gap-2 pt-1">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-primary-container focus:ring-0" id="biometric-consent" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-outline cursor-pointer select-none" for="biometric-consent">
+            I consent to encrypted cryptographic newsletters & tier drops
+          </label>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- CLIENT MICRO-INTERACTION SCRIPT -->
+<script>
+  (function initDealTimer() {
+    let seconds = 45;
+    let minutes = 22;
+    let hours = 14;
+
+    const secEl = document.getElementById('timer-seconds');
+    const minEl = document.getElementById('timer-minutes');
+    const hrEl = document.getElementById('timer-hours');
+
+    if (!secEl || !minEl || !hrEl) return;
+
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+      } else {
+        seconds = 59;
+        if (minutes > 0) {
+          minutes--;
+        } else {
+          minutes = 59;
+          if (hours > 0) {
+            hours--;
+          }
+        }
+      }
+
+      secEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+      minEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+      hrEl.textContent = hours < 10 ? '0' + hours : hours;
+    }, 1000);
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface py-space-3xl mt-space-3xl"><div class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md uppercase tracking-wider text-primary font-bold">LBOSS SHOP</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-bold">EST. 2027</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Next-generation hyper-luxury technology and precision lifestyle catalog engineered for elite collectors and visionaries. Surgical hardware, uncompromising bespoke aesthetics.</p><div class="flex flex-col gap-space-xs pt-space-xs"><span class="font-label-md text-label-md text-on-surface font-semibold">VIP Boss Club Access</span><p class="font-body-sm text-body-sm text-outline">Subscribe for encrypted drops & receive an immediate 10% private vault voucher.</p><form class="flex items-center gap-space-xs max-w-md pt-2"><input class="flex-1 bg-surface-container rounded-xl px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Enter encrypted terminal email" type="email"/><button class="px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-primary transition-colors" type="button">Claim</button></form></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Collections</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="electronics" href="#">Electronics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cyber-fashion" href="#">Cyber Fashion</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="precision-living" href="#">Precision Living</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#">Audio & Acoustics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault-exclusives" href="#">Vault Exclusives</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Concierge</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="client-services" href="#">Private Client Advisory</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="global-transit" href="#">Encrypted Transit & Freight</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bespoke-order" href="#">Bespoke Customization</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="warranty-vault" href="#">Lifetime Hardware Vault</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="support" href="#">Terminal Support</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Governance</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sustainability" href="#">Circular Metallurgy & Carbon</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="security-charter" href="#">Quantum Security Protocol</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="investor-relations" href="#">Investor Intelligence</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="legal" href="#">Legal & Sovereignty</a></nav></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase">Verified Nodes:</span><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="px-space-xs py-1 rounded bg-surface-container">Apple Pay</span><span class="px-space-xs py-1 rounded bg-surface-container">Crypto Vault</span><span class="px-space-xs py-1 rounded bg-surface-container">Visa Infinite</span><span class="px-space-xs py-1 rounded bg-surface-container">Mastercard Black</span></div></div><div class="font-body-sm text-body-sm text-outline text-center md:text-right">© 2027 LBOSS CORPORATION. ALL RIGHTS RESERVED. PRIVATE CATALOG PROTOCOL.</div></div></div></footer></body></html>

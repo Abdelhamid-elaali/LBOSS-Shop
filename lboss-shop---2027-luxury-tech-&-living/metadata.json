@@ -1,0 +1,7 @@
+{
+  "name": "LBOSS SHOP - 2027 Luxury Tech & Living",
+  "description": "Next-generation hyper-luxury technology and precision lifestyle catalog engineered for elite collectors and visionaries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

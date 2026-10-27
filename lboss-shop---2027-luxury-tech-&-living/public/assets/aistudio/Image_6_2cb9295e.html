@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Manrope:wght@100..900&family=Sora:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#e0e2ed","surface-tint":"#fbbc0e","surface":"#10131b","on-secondary-fixed-variant":"#4816cb","surface-container-high":"#272a32","on-primary":"#402d00","surface-container-highest":"#32353d","background":"#10131b","on-tertiary-container":"#005575","on-tertiary-fixed":"#001e2c","on-error-container":"#ffdad6","secondary":"#cabeff","primary-container":"#f5b700","secondary-fixed":"#e6deff","surface-container-low":"#181b24","outline":"#9c8f78","outline-variant":"#504532","secondary-container":"#4816cb","error":"#ffb4ab","inverse-on-surface":"#2d3039","on-secondary":"#31009a","tertiary-container":"#6bccff","on-tertiary-fixed-variant":"#004c69","on-primary-fixed-variant":"#5c4300","surface-container":"#1c1f28","tertiary":"#b8e3ff","inverse-surface":"#e0e2ed","surface-variant":"#32353d","tertiary-fixed-dim":"#7bd0ff","on-error":"#690005","secondary-fixed-dim":"#cabeff","on-tertiary":"#00354a","surface-container-lowest":"#0b0e16","primary-fixed-dim":"#fbbc0e","on-secondary-container":"#b9aaff","on-surface-variant":"#d4c5ac","on-primary-container":"#664a00","on-secondary-fixed":"#1c0062","primary":"#ffd88a","inverse-primary":"#795900","surface-dim":"#10131b","primary-fixed":"#ffdea0","tertiary-fixed":"#c4e7ff","on-surface":"#e0e2ed","error-container":"#93000a","surface-bright":"#363942","on-primary-fixed":"#261a00"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"3rem",margin:"4rem","gutter-sm":"1rem","margin-sm":"1rem","space-lg":"2rem","space-2xl":"4rem","space-sm":"1rem","space-md":"1.5rem","space-3xl":"6rem","space-xs":"0.5rem","margin-md":"2rem",gutter:"1.5rem"},fontFamily:{"body-lg":["Manrope"],"label-lg":["JetBrains Mono"],"headline-lg":["Sora"],"display-xl":["Sora"],"headline-md":["Sora"],"headline-xl-mobile":["Sora"],"body-md":["Manrope"],"headline-xl":["Sora"],"headline-sm":["Sora"],"display-xl-mobile":["Sora"],"label-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"body-sm":["Manrope"],"display-lg":["Sora"],"display-lg-mobile":["Sora"]},fontSize:{"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"label-lg":["16px",{lineHeight:"22px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-xl":["72px",{lineHeight:"80px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"display-xl-mobile":["40px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"800"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"label-md":["14px",{lineHeight:"18px",letterSpacing:"0.03em",fontWeight:"500"}],"body-sm":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-low/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-xs"><img alt="LBOSS SHOP Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5wpnqOGybzLijeN7gp4hRZqXVHckigJ3y_DgvYqst68XrP0TGo98YlBUffYYFi1nepWPlL_35R_aruWRAZOWwUDGIgJXTwTyBiIOwl-7UDJGMloZwEsmn7aD8bEEB5s-J055JsZ8EwasfUrD1vrj5bg3RHa5B8r0k9uf2A0jrAV22r55nKS-xL3oK8u7ch9_Sd8vdb4FsBDOsFxpcPAU509X-A7T_f3BaFugGknEn-SjMXStOrHPrElE"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-bold hidden sm:inline-block">LBOSS</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="electronics" href="#">Electronics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cyber-fashion" href="#">Cyber Fashion</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="precision-living" href="#">Precision Living</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#">Audio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault-exclusives" href="#">Vault Exclusives</a></nav></div><div class="flex-1 max-w-2xl hidden lg:flex flex-col gap-1"><div class="relative flex items-center w-full bg-surface-container rounded-xl px-space-sm py-2 focus-within:ring-2 focus-within:ring-secondary"><span class="material-symbols-outlined text-outline mr-space-xs select-none">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search 2027 luxury tech, flagship devices, designer apparel..." type="text"/><kbd class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded bg-surface-container-high select-none">⌘K</kbd></div><div class="flex items-center gap-space-xs px-1"><span class="font-label-sm text-label-sm text-outline-variant">Trending:</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="titanium-watch-pro" href="#">Titanium Watch Pro</a><span class="text-outline-variant text-xs">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="cyberdeck-16" href="#">CyberDeck 16</a><span class="text-outline-variant text-xs">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" data-path="obsidian-headphones" href="#">Obsidian Headphones</a></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-xs py-1 rounded-lg"><span class="material-symbols-outlined text-base">attach_money</span><span>USD $</span></div><button aria-label="Theme Toggle" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">dark_mode</span></button><a aria-label="Wishlist" class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="absolute -top-1 -right-1 flex items-center justify-center h-4 min-w-4 px-1 rounded-full bg-secondary-container font-label-sm text-label-sm text-secondary-fixed leading-none">3</span></a><a aria-label="Interactive Cart" class="relative flex items-center gap-space-xs px-space-sm py-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" data-path="cart" href="#"><span class="material-symbols-outlined text-primary-container">shopping_bag</span><span class="font-label-md text-label-md text-primary font-bold">$3,420</span><span class="flex items-center justify-center h-5 w-5 rounded-full bg-primary-container font-label-sm text-label-sm text-on-primary-container font-bold shadow-[0_0_12px_rgba(245,183,0,0.4)]">2</span></a><div class="relative flex items-center gap-space-xs pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1qH0OhumjwcapBPu5vLEw8BQOeHQiWhbtcLzDW11QrHkjxHH8E_V3kk1hQ8XLQh1_P7PVl-kUwLv6tww1zTu5JFO6LidtuW2WZfRI1XhRuvccIPnBCWSjJkhCK2WvQBC0AYaHaXspA6rpteBQ-eiNNRKeO6kUYR_cMb_N2CnbqArKywsdg_Jl4IZ-tHjTBA4I4xoNXjnCfWiZTBk_og-nLCa1VziulQv1kqvIqe26ufXAFYhJCoy7yw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface"></span></div><span class="hidden 2xl:inline-block font-label-sm text-label-sm text-primary font-semibold">VIP EXECUTIVE</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Ambient Atmospheric Backdrops -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 right-1/4 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[140px] pointer-events-none"></div>
+<div class="absolute top-96 left-10 w-[450px] h-[450px] rounded-full bg-secondary-container/20 blur-[130px] pointer-events-none"></div>
+<div class="max-w-[1720px] mx-auto px-margin-sm md:px-margin-md xl:px-margin py-space-md">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mb-space-lg">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-base">home</span>
+<span>Home</span>
+</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Electronics</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Smart Wearables</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-medium">Apex Chrono X-1</span>
+</nav>
+<!-- Main Product Viewport: Asymmetric 2-Column Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Optic Viewport & Multi-Angle Stage (Cols 1-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Main Hero Display Chassis -->
+<div class="relative w-full aspect-square md:aspect-[4/3] rounded-xl bg-surface-container-low overflow-hidden group shadow-2xl flex items-center justify-center p-space-md">
+<!-- Background Radial Glow -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(251,188,14,0.08)_0,rgba(16,19,27,0.95)_75%)]"></div>
+<!-- Live Status Badges & Controls -->
+<div class="absolute top-space-md left-space-md right-space-md flex items-center justify-between pointer-events-none z-10">
+<div class="flex items-center gap-space-xs pointer-events-auto">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md font-label-sm text-label-sm text-primary shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                  ULTRA-RES 4K SENSOR
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md font-label-sm text-label-sm text-secondary-fixed">
+                  SERIES 2027
+                </span>
+</div>
+<div class="flex items-center gap-2 pointer-events-auto">
+<button aria-label="360 Rotation View" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface hover:text-primary font-label-sm text-label-sm transition-all shadow-md" id="rotate-btn" type="button">
+<span class="material-symbols-outlined text-base">360</span>
+<span>360° SPIN</span>
+</button>
+<button aria-label="Fullscreen Gallery" class="p-2 rounded-full bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface hover:text-primary transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-base">crop_free</span>
+</button>
+</div>
+</div>
+<!-- Main Product Image -->
+<div class="relative w-full h-full flex items-center justify-center z-0 p-4 transition-transform duration-500 ease-out group-hover:scale-105" id="hero-image-stage">
+<img alt="Apex Chrono X-1 Neural Titanium Smartwatch" class="w-full h-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.85)] cursor-crosshair transition-opacity duration-300" data-alt="Photorealistic studio shot of the LBOSS Apex Chrono X-1 Neural Titanium Smartwatch floating on deep obsidian background. Brushed grade-5 titanium circular chassis with sapphire crystal face showcasing glowing cyan neural telemetry dials, subtle 135-degree gold and violet rim reflections, bespoke sculpted lugs, and black ballistic fluorocarbon hybrid strap. Extreme macro depth of field, dramatic cinematic rim lighting, ultra-high end haute horlogerie aesthetic." id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfb09f8SpPIPIC4M_AZhwcN1TBSvtoT28Hbc5ClgX9LolSh2c4xKLKR0LTdtxxa_1NbZx1jTwwYnaVn4PkhkZ5gLsCscxM09RGV9fRKJ4KIpYjhAplZamiUTaG0LrrZdlsnemGxHGY4kPXjCBWnzkDXx0Nnhr5ijipmEU6wT4AoEhjupxAzt8ZaPd2M0yo7aFOdfFx_fMaQ-Kv16fyLhoPfQwMxO5pPmNaOFr7aeIvwzJJVZMgJq1Khw"/>
+</div>
+<!-- Dynamic Zoom & Telemetry HUD Overlay -->
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between pointer-events-none z-10">
+<div class="bg-surface-container-highest/80 backdrop-blur-lg px-3 py-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant flex items-center gap-3">
+<span class="text-primary font-semibold">TETRA-CHROMA DIAL</span>
+<span class="text-outline-variant">|</span>
+<span>SPECTRAL SAPPHIRE 9H</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest/80 backdrop-blur-lg px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-sm">pinch</span>
+<span>DRAG OR HOVER TO SCAN</span>
+</div>
+</div>
+</div>
+<!-- 4K Thumbnails Selection Rail -->
+<div class="grid grid-cols-4 gap-space-sm" id="thumb-rail">
+<button class="thumb-node active flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left group ring-2 ring-primary" data-angle="front" type="button">
+<div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Front Dial Perspective" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Front straight-on macro angle of Apex Chrono X-1 dial showcasing electric violet neural telemetry widgets, dual golden chrono hands, sub-dials, and laser etched bezel markers in dark luxury studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaEOAFpbmKQQ5q0yy6quNVzgzZ0ZIAd82x8c0FqCt8aG3ugojwPOrp5HJcX3lL6op0Wb_MUg3nbIyzCDOFi0MNmkbQdPnUwVl_AgRv7eWKB6SWDKCQnJ3gGiwbuw2wdLHXH6J98SsV7Y7edUaGJcpfT_Q-jZ5uq_iy3C6lpN0uWGT_thq31G-vXiV0hmSXuafyh4-vm6yUXpXu7nSAS-SvHVXIIG7A8IvrKccWt_k-l4hQ8RUamL5CWQ"/>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold truncate px-1">01. Front Dial</span>
+</button>
+<button class="thumb-node flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left group" data-angle="chassis" type="button">
+<div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Chassis Lateral Geometry" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Extreme side macro angle of the Apex Chrono X-1 Grade-5 Titanium chassis displaying micro-machined crown with knurled grip, haptic sensor button, and satin brushed metal grain with luxury violet bounce reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9EkH43te8qdq0enh21rCyjCsJHSZ0pVHWUBOw1mLfNmtq467SUd3iFhGjnY2sZ-_TNsxm5kz4sv0pKKq5DyFAkq9gN0brJYE4Tu53TL-ZEvRuPOQbztGrNqCBidh1p4jIvRbFGnoxfaA-_0CcRr_C3zbstGM19miySmN1ZQERk2k44cWPulAu8yTFP8IF3Mwm_mbIdncVUlGlvhkpPfuK7a6Zgwsxbdeg7i8JPR189L_PXgumi3hKTg"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface truncate px-1">02. Grade-5 Body</span>
+</button>
+<button class="thumb-node flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left group" data-angle="back" type="button">
+<div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Biometric Caseback" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Polished mirror ceramic backplate of Apex Chrono X-1 showing quad-emitter optical biometrics sensor array, magnetic gold induction terminals, and engraved serial numbers on deep dark plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZb8QQk8C0Igb_I2DLH5F19JeWj_c5vZPTeAP6hkRHQM5N_xPVIiYSo-z1cn7sQSzghTVgVInBAHgD8X8O5XPwKqRJCyyM9Q2OFxgiFCD_BIwuY8DuvA2PO8PJuq_44-jTXu02OdCI4TAf0XGTIQDYc7p05fOKXuaVhU6ZiXP-w4fKUackTYl1Ag5DYLAiXx1-jwSLV82NB_9udwBzaa-jE7AvmF_BqiHCXHJOLXLkEUwQg8Zb6OyKIQ"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface truncate px-1">03. Neural Sensor</span>
+</button>
+<button class="thumb-node flex flex-col gap-1.5 p-2 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left group" data-angle="strap" type="button">
+<div class="w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Titanium Mesh Strap" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Close-up of bespoke Milanese magnetic titanium mesh band intertwined with carbon fiber weave and quick-release clasp mechanism set against brushed charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuogDyM2dIgjFYqAsNnb9eytMhC_mhAVnYDafKSr0NBW1SBUNRb0ugG-Z2JIoCfcIPsS0qqn7L2Quye6xHeYozFEJziENsESYs4nLh4dNYvAfJKsOuUwRXjn02yk5tEVG2Ka6A6tfWgb6TW1NZDyQkT25ytjo2M9VgpS7LuEH4V5RxdkCbkW40b8xckKB2AMOwxnIE08lm5k5RQBrK57W3AYKqFJZxHp4jk3jvNoR12vOUS92B80kEjQ"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface truncate px-1">04. Milanese Clasp</span>
+</button>
+</div>
+<!-- Micro Hardware Telemetry Strip -->
+<div class="bg-surface-container-low rounded-xl p-space-md grid grid-cols-3 gap-space-sm mt-space-xs">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">memory</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">NEURAL PROCESSOR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">N10 Quantum</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">shield_locked</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">WATER INTEGRITY</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">100M ISO-900</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">battery_charging_full</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SOLID-STATE BATTERY</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14 Days Run</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Purchase Decision Engine (Cols 8-12) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-low p-space-md md:p-space-lg rounded-2xl shadow-xl">
+<!-- Identity & Rating Row -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold px-2.5 py-0.5 rounded-full bg-primary-container/20">
+                  LBOSS LABS APEX SERIES
+                </span>
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded-md bg-secondary-container/40">GEN-4 HARDWARE</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">SKU: LB-APX-TI27</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight mt-1">
+              Apex Chrono X-1 Neural Titanium
+            </h1>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="font-label-md text-label-md text-on-surface font-bold ml-1">4.9</span>
+</div>
+<span class="text-outline-variant">•</span>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors underline decoration-outline-variant" href="#reviews-section">
+                128 Executive Reviews
+              </a>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span>Verified Collectors</span>
+</div>
+</div>
+</div>
+<!-- Price Telemetry Engine & Allocation Flag -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between flex-wrap gap-2">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-lg text-display-lg text-primary font-bold tracking-tight font-label-lg leading-none" id="product-price-val">
+                  $2,499.00
+                </span>
+<span class="font-headline-sm text-headline-sm text-outline line-through font-label-md">
+                  $2,899.00
+                </span>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-sm">
+                SAVE $400 • 14% VIP ALLOCATION
+              </div>
+</div>
+<div class="flex items-center gap-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-base">payments</span>
+<span>Or 4 interest-free vault disbursements of <strong class="text-on-surface font-label-sm">$624.75</strong> with <strong>LBOSS Vault Pay</strong></span>
+</div>
+<!-- Scarcity / Stock Warning Bar -->
+<div class="pt-space-xs flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-error font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                  In Stock - 3 Units Remaining for Express Dispatch
+                </span>
+<span class="text-outline">Tier 1 Inventory Vault</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full w-[82%] bg-gradient-to-r from-primary-container via-error to-error rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Interactive Material / Chassis Finish Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Chassis Metallurgy Finish</label>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="color-label">Raw Brushed Titanium (Grade 5)</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="color-opt active flex items-center gap-2.5 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left ring-2 ring-primary" data-color="Raw Brushed Titanium (Grade 5)" type="button">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-slate-400 to-slate-200 shadow-inner shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-bold truncate">Titanium</span>
+<span class="font-label-sm text-[10px] text-outline">Satin Lustre</span>
+</div>
+</button>
+<button class="color-opt flex items-center gap-2.5 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" data-color="Obsidian DLC Black" type="button">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-black via-zinc-900 to-zinc-700 shadow-inner shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-bold truncate">Obsidian</span>
+<span class="font-label-sm text-[10px] text-outline">DLC Coated</span>
+</div>
+</button>
+<button class="color-opt flex items-center gap-2.5 p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left" data-color="Boss Cyber Gold (24K Infused)" type="button">
+<span class="w-5 h-5 rounded-full bg-gradient-to-tr from-amber-600 via-yellow-400 to-amber-200 shadow-inner shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-bold truncate">Cyber Gold</span>
+<span class="font-label-sm text-[10px] text-outline">24K Ion Plated</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Interactive Case Architecture Size Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Chassis Caliber Size</label>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">straighten</span>
+<span>Fitting Blueprint</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="size-opt active p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left ring-2 ring-primary flex flex-col gap-0.5" data-size="44" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">44mm</span>
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Ergonomic Executive</span>
+<span class="font-label-sm text-label-sm text-outline">Fits 145mm – 190mm wrists</span>
+</button>
+<button class="size-opt p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all text-left flex flex-col gap-0.5" data-size="48" type="button">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">48mm</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">+$150</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Commander Edition</span>
+<span class="font-label-sm text-label-sm text-outline">Fits 170mm – 225mm wrists</span>
+</button>
+</div>
+</div>
+<!-- Quantity Stepper & Dual Call To Actions -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center gap-3">
+<!-- Stepper Control -->
+<div class="flex items-center bg-surface-container rounded-xl p-1 shrink-0">
+<button aria-label="Decrease quantity" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="qty-dec" type="button">
+<span class="material-symbols-outlined text-lg">remove</span>
+</button>
+<span class="font-label-lg text-label-lg font-bold text-on-surface w-10 text-center select-none" id="qty-val">1</span>
+<button aria-label="Increase quantity" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" id="qty-inc" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+<!-- Primary CTA Boss Button -->
+<button class="flex-1 py-3.5 px-6 rounded-xl bg-primary-container hover:bg-primary text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-[0_12px_24px_-6px_rgba(245,183,0,0.35)] transition-all transform hover:-translate-y-0.5 active:translate-y-0" id="add-to-cart-btn" type="button">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<span id="cart-cta-text">Add to Cart - $2,499.00</span>
+</button>
+<!-- Wishlist Floating Heart -->
+<button aria-label="Save to Vault Wishlist" class="w-12 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-secondary transition-all" id="wishlist-btn" type="button">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</button>
+</div>
+<!-- Secondary Express Checkout Button -->
+<button class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-secondary-container/80 to-secondary-container hover:brightness-110 text-secondary-fixed font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(72,22,203,0.3)] transition-all" type="button">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+<span>Express Checkout via Vault Pay</span>
+</button>
+</div>
+<!-- Trust & Concierge Transit Security Box -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Complimentary Insured Courier (2-Day Delivery)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Signature-mandated armored transit via LBOSS Private Logistics</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Biometric Vault Warranty (5 Years)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero-deductible titanium accidental repair and battery rejuvenation</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">assignment_return</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">30-Day Hassle-Free Returns</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Encrypted returns vault lock with immediate refund clearance</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DEEP DIVE TABS & TECHNICAL BLUEPRINT SECTION -->
+<section class="mt-space-3xl flex flex-col gap-space-lg">
+<!-- Interactive Tab Headers -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none bg-surface-container-low p-1.5 rounded-2xl">
+<button class="tab-trigger active px-6 py-3 rounded-xl font-headline-sm text-headline-sm font-semibold transition-all bg-primary-container text-on-primary-container shadow-md" data-tab="specs" type="button">
+            Technical Specifications
+          </button>
+<button class="tab-trigger px-6 py-3 rounded-xl font-headline-sm text-headline-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-tab="neural" type="button">
+            Neural Engine & OS
+          </button>
+<button class="tab-trigger px-6 py-3 rounded-xl font-headline-sm text-headline-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-tab="shipping" type="button">
+            Shipping & Vault Security
+          </button>
+<button class="tab-trigger px-6 py-3 rounded-xl font-headline-sm text-headline-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-2" data-tab="reviews" type="button">
+<span>Executive Reviews</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary">128</span>
+</button>
+</div>
+<!-- TAB PANELS CONTAINER -->
+<div class="bg-surface-container-low rounded-2xl p-space-md md:p-space-xl shadow-xl">
+<!-- TAB 1: Structured Luxury Specs Grid (Active by default) -->
+<div class="tab-panel flex flex-col gap-space-lg" id="tab-specs">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">SURGICAL ARCHITECTURE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Grade-5 Metallurgy & Quantum Sensors</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                Every chassis is wire-EDM cut from a solid ingot of aerospace-grade titanium, cryogenically hardened, and hand-finished with diamond abrasive brushes.
+              </p>
+</div>
+<!-- Bento Specification Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Spec Block 1 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">CHASSIS & CRYSTAL</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Aerospace Grade-5 Titanium</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sapphire crystal face with 9-layer anti-reflective optical coat and oleophobic diamond carbon shell.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">Weight: 49.2 grams</div>
+</div>
+<!-- Spec Block 2 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">DISPLAY ENGINE</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">1.92" Micro-LED Retina</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">492 x 412 pixel array with 3,500 nits sustained peak brightness for extreme solar exposure legibility.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">Variable 1Hz – 144Hz ProMotion</div>
+</div>
+<!-- Spec Block 3 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SOLID STATE POWER</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Lithium-Ceramic 580mAh</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous 14-day battery reserve under standard operational tracking; 0 to 80% charge in 22 minutes.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">Fast Magnetic Inductive Puck</div>
+</div>
+<!-- Spec Block 4 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">SENSORS & TELEMETRY</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Hexa-Spectrum Biometrics</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Medical-grade ECG rhythm detector, blood oxygen saturation (SpO2), core body temperature flux, and arterial stiffness.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">Continuous 1,000Hz sampling</div>
+</div>
+<!-- Spec Block 5 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">OCEAN & EXTREME DEPTH</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">100M Depth Rating (10 ATM)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineered for freediving, saturation depths, and hyperbaric shock. Features integrated micro-sonar depth gauge.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">EN13319 European Dive Standard</div>
+</div>
+<!-- Spec Block 6 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">QUANTUM INTERCONNECT</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">5G RedCap + Satellite SOS</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct low-earth-orbit terminal pinging without cellular towers. UWB Precision Ranging and Bluetooth 5.4 LE.</p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-primary">Zero-latency neural pairing</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: Neural Engine & OS -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-neural">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">LBOSS SYNAPSE OS 4.0</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Sub-Conscious Micro-Gesture Recognition</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Integrated with our patented N10 Coprocessor, the Chrono X-1 monitors micro-tendon deflections and bio-impedance variances in your wrist, decoding intent before conscious muscle activation occurs.
+                </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">electric_bolt</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sub-2ms gesture dispatch latency</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">lock</span>
+<span class="font-body-sm text-body-sm text-on-surface">On-device local neural weights (zero cloud exfiltration)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">fingerprint</span>
+<span class="font-body-sm text-body-sm text-on-surface">Continuous Biometric Wrist Authentication</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 aspect-video rounded-xl bg-surface-container flex items-center justify-center p-space-md">
+<!-- Data Visualizer Vector Graphic -->
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" viewbox="0 0 500 240">
+<path d="M 10 120 Q 70 40 130 120 T 250 120 T 370 120 T 490 120" stroke="currentColor" stroke-opacity="0.3" stroke-width="2"></path>
+<path class="text-secondary" d="M 10 120 Q 90 20 180 120 T 320 120 T 490 120" stroke="currentColor" stroke-dasharray="4 4" stroke-width="3"></path>
+<path class="text-primary" d="M 10 120 C 80 180 140 30 220 120 C 300 210 380 40 490 120" stroke="currentColor" stroke-width="3"></path>
+<circle class="fill-primary animate-ping" cx="220" cy="120" r="6"></circle>
+<circle class="fill-primary" cx="220" cy="120" r="5"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- TAB 3: Shipping & Vault Security -->
+<div class="tab-panel hidden flex-col gap-space-md" id="tab-shipping">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Encrypted Diplomatic Shipping Protocol</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              Every Apex Chrono X-1 is packed in a hermetically sealed aluminum flight case with tamper-evident digital cryptographic seals.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-sm">
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">TIER 1 TRANSIT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Armored Courier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Signature-only personal delivery with ID verification and live geo-tracking link.</p>
+</div>
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">INSURANCE VAULT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">100% Guaranteed</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full transit value insured by Lloyd's of London until verified custody handover.</p>
+</div>
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">GLOBAL REACH</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">190+ Jurisdictions</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expedited customs clearance handled pre-flight with zero surprise tariff levies.</p>
+</div>
+</div>
+</div>
+<!-- TAB 4: Executive Reviews -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-reviews">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-display-xl text-display-xl text-primary font-bold leading-none">4.9</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">OUT OF 5.0 STARS</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Based on 128 verified luxury timepiece owners</span>
+</div>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors self-start md:self-auto" type="button">
+                Submit Verified Review
+              </button>
+</div>
+<!-- Review Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Marcus Vance</span>
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 rounded bg-primary-container/20">Verified Private Client</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">3 days ago</span>
+</div>
+<div class="flex text-primary text-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  "The bezel chamfering rivaled my Patek Nautilus, while the neural gesture recognition for switching cockpit navigation displays is nothing short of witchcraft. 48mm size is commanding."
+                </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 rounded bg-primary-container/20">Verified VIP</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">1 week ago</span>
+</div>
+<div class="flex text-primary text-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  "The battery life legitimately holds 13-14 days without sacrificing the 3,500 nit display. Titanium weight feels practically weightless on the wrist despite the heavy-duty sapphire lens."
+                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY PAIRED TOGETHER: Cross-Sell Bundle Card -->
+<section class="mt-space-3xl">
+<div class="bg-surface-container-low rounded-2xl p-space-md md:p-space-lg shadow-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest">TACTICAL PAIRING BUNDLE</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Frequently Engineered Together</h2>
+</div>
+<div class="font-label-sm text-label-sm text-primary font-semibold">
+              Save $180 When Purchased As Ecosystem Kit
+            </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center">
+<!-- Items Grid -->
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-space-sm items-center">
+<!-- Item 1: Main Watch -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-2 relative">
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-sm text-[10px]">MAIN UNIT</span>
+<div class="aspect-square rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="Apex Chrono X-1" class="w-full h-full object-cover" data-alt="Apex Chrono X-1 titanium smartwatch face thumbnail on dark velvet gradient background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xKRH4Tjp-njJpf0YwIb6kiE2IkSllhM7Oon2ONuxbe0NmnEK1xIJ-VlsFGe7cvSTIxRUcMuYmLS9pKig6xNiaVg2XtR9UJE0HjaI3jYlhxJJY0bpgFYP9Zp09ONjwgKur4g3inxpZZhIXWl84bCWvDCsxRZ_Y7LQ9mRKaTIFNTodqmVUn-fkTCQNo5jp3pj1tJFPtw6mOFZrETsLRWZ-C1bniPUHfBpYbRh28rYjKz9oMpiRqaFUig"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm text-on-surface font-bold truncate">Apex Chrono X-1</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">$2,499.00</span>
+</div>
+</div>
+<!-- Item 2: Wireless Magnetic Charging Dock -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-2 relative">
+<span class="material-symbols-outlined absolute top-2 right-2 text-primary text-base">check_box</span>
+<div class="aspect-square rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="Obsidian Magnetic Charging Pedestal" class="w-full h-full object-cover" data-alt="LBOSS Obsidian Magnetic Wireless Charging Pedestal made of machined solid brass and dark smoked glass with gold induction rim in studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmrDVpdiKgvZqzLFL0dtzqbbb0WdMqDozQGdYMM9TWEIPdUoGEFxE3iyIVSKJDtxc7bfqN-mRpuJccNsn9oPpkAl3BM1ylTbusLgSi72qwlKULqt8NEQTpb1CBP5KkEP2L0bcP-WI_Mxm58r50zdBIKr2GHDPL4pgE5heK4TFZtEfxh6ry5SKchCMZIZbJi3IPffDVb2LBbfmLe5VCxUJSuz5OsJUn0iyz14M1AfjK5Amyi1WAlFgGiQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm text-on-surface font-bold truncate">Obsidian Dock 65W</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">$280.00</span>
+</div>
+</div>
+<!-- Item 3: Carbon Fiber Travel Vault -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-2 relative">
+<span class="material-symbols-outlined absolute top-2 right-2 text-primary text-base">check_box</span>
+<div class="aspect-square rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="Carbon Fiber Travel Vault" class="w-full h-full object-cover" data-alt="Hardened forged carbon fiber watch travel capsule case with micro-suede interior and titanium latch mechanism in dramatic low-key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAXPnqq0pbrJ7KQOZCs7aaOCD6I25rvfmTe0DBtHdDvIS9a4bsui9saAvp8c152iGGi2R0pPAQkxzMiGAWPt3sLyRHuKb5P2VeZwXQ7LvrwpHZD-YgX57rTxO9eGJz4Kb2WUrCdlb1tSbJe2Szon_zOonERiLVySuj9d7X9ZON77fjDSYk16lBaiOyJ8N0svfk8_pMd442fu-m_m6iGLksCB44h7lZ2LC4wTl2gNsqhbvajyYHzwusjg"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm text-on-surface font-bold truncate">Forged Carbon Capsule</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">$190.00</span>
+</div>
+</div>
+</div>
+<!-- Bundle Action Card -->
+<div class="lg:col-span-4 bg-surface-container p-space-md rounded-xl flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">TOTAL BUNDLE VALUATION</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold font-label-lg">$2,789.00</span>
+<span class="font-label-md text-label-md text-outline line-through">$2,969.00</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">All 3 Items Included in VIP Flight Case</span>
+</div>
+<button class="w-full py-3 px-4 rounded-xl bg-primary hover:bg-primary-fixed text-on-primary font-headline-sm text-sm font-bold flex items-center justify-center gap-2 shadow-lg transition-transform hover:-translate-y-0.5" type="button">
+<span class="material-symbols-outlined text-lg">add_shopping_cart</span>
+<span>Claim Complete Ecosystem Kit</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- RELATED APEX COLLECTIONS: High-Octane Carousel Preview -->
+<section class="mt-space-3xl mb-space-2xl flex flex-col gap-space-lg">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">LBOSS LABS PORTFOLIO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Related Apex Collections</h2>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous Slide" class="p-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-xl">west</span>
+</button>
+<button aria-label="Next Slide" class="p-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-xl">east</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded-2xl p-space-sm flex flex-col gap-space-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-lowest overflow-hidden">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-primary font-label-sm text-xs font-bold">
+                AUDIO
+              </span>
+<img alt="Obsidian Planar Headphones" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="LBOSS Obsidian Over-Ear Planar Headphones made of machined titanium, memory foam leather cups, with electric violet accent ring on deep black surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm7z5WhdApaswdN0Ezi8_hWvMe1szyl6htB-GqKV7KgYXGekFvBfJiqDzAQ72UV74N6U5uWyYtJDAInuEqgthEYsPS8VvaLyEnUkdkf5Hez3n8pt_NDOIIACswiHNdacqLqIOsO8A-z8eHdcqYladm2H5s5psJro89XE6r7OF4KUIJn7HG_qskwKAxaJW7mtUNueY-0XWSn3TQS2LTZKt9Qm4gRciqQsyez05c5UzuOUoDhgkJHmhS1A"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">LBOSS ACOUSTICS</span>
+<h3 class="font-headline-sm text-sm text-on-surface font-bold group-hover:text-primary transition-colors truncate">
+                Obsidian Master Planar 9
+              </h3>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-md text-label-md text-primary font-bold">$1,850.00</span>
+<span class="font-label-sm text-label-sm text-outline">Neural EQ Ready</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded-2xl p-space-sm flex flex-col gap-space-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-lowest overflow-hidden">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-secondary-fixed font-label-sm text-xs font-bold">
+                COMPUTING
+              </span>
+<img alt="CyberDeck 16 Terminal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek ultra-thin cyberpunk modular laptop with exposed carbon weave, gold heat pipes, and holographic keyboard projection in obsidian dark room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqDJVLVNla3S4a19u4wnmLS602c9NMwGZ5ifrEXUqaH5k7UY5W9WN-efNyEAa0LKBLYYjYYbw43tTyw41TH1qDSW0SK9RxbmkUzLOVlERhyGzHbpIcxEFVg2lKLuC0jqkQb5OXa4WmBZfZDepGOi6VmCS6pSZdbkfPtZuxIB5x724BTHfZDHVdvkKU42cV2GtiGELvoRiwdw0OJlb-JnQ_KS_aZTWnzkh5UvR1OE-u3Q2M1zLKwYjTVQ"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">LBOSS COMPUTING</span>
+<h3 class="font-headline-sm text-sm text-on-surface font-bold group-hover:text-primary transition-colors truncate">
+                CyberDeck 16 Executive
+              </h3>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-md text-label-md text-primary font-bold">$4,890.00</span>
+<span class="font-label-sm text-label-sm text-outline">Quantum Core</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded-2xl p-space-sm flex flex-col gap-space-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-lowest overflow-hidden">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-primary font-label-sm text-xs font-bold">
+                OPTICS
+              </span>
+<img alt="Spectra AR Neural Glass" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ultralight titanium neural augmented reality smart sunglasses with electrochromic mirror lenses resting on minimal dark concrete stand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsUYrATqv8fdZgAZSwK_vmb7LQ_UH3B51qPapfPmyQrQjeh9tFokuGm4fB76HuUV4eohrWgTXADux3TUbc_x_zSLpNTNXPElaziITlllWgG-mihuOcn9VoDgzRU3zxv2SK0F-ggXoiZOC9JuYrCzpvF1kd_267fsOwTBfeI7Md115bCP6DQej9cpSrw7p2aJhfX3XgeBiYF7AgTsHUof6cmnUYWekzuXacNIEwi0S_viTIjqjZ2LxEDw"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">LBOSS VISION</span>
+<h3 class="font-headline-sm text-sm text-on-surface font-bold group-hover:text-primary transition-colors truncate">
+                Spectra AR Titanium Glass
+              </h3>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-md text-label-md text-primary font-bold">$1,450.00</span>
+<span class="font-label-sm text-label-sm text-outline">Micro-OLED HUD</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-low hover:bg-surface-container rounded-2xl p-space-sm flex flex-col gap-space-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
+<div class="relative w-full aspect-square rounded-xl bg-surface-container-lowest overflow-hidden">
+<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-secondary font-label-sm text-xs font-bold">
+                CYBER FASHION
+              </span>
+<img alt="Aegis Graphene Field Parka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Graphene coated weather-adaptive tactical executive coat with magnetic closures and integrated inductive device charging pockets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAumHTJ-sQQr5KcNn0aTovsRGIv_abX7P5IiBGXtQDRPHn4dYCDj10vtKmFRsVciZ7yjv_6BrD-YJXsuHzjD2SgOIsMmah6e4gF3ATO7Rl_bR9lENOYU_9EGkzm8op-Tsl86idjQdCmdGzxXUtJBTD7zDA1sTtadZh2KBqoR2iMX2p3VSODKgn_bnlvFWFNx4wPCPkU_OIurzgX38l1aQ7BTeiLzPRlwjuQhYHj5qDOMgT4ZYPJ0B0VJg"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline">LBOSS COUTURE</span>
+<h3 class="font-headline-sm text-sm text-on-surface font-bold group-hover:text-primary transition-colors truncate">
+                Aegis Graphene Trench Coat
+              </h3>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-md text-label-md text-primary font-bold">$1,200.00</span>
+<span class="font-label-sm text-label-sm text-outline">Bulletproof Thread</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Logic Script -->
+<script>
+    (() => {
+      // Quantity logic
+      const qtyVal = document.getElementById('qty-val');
+      const qtyInc = document.getElementById('qty-inc');
+      const qtyDec = document.getElementById('qty-dec');
+      const cartCtaText = document.getElementById('cart-cta-text');
+      const priceDisplay = document.getElementById('product-price-val');
+      
+      let currentQty = 1;
+      let basePrice = 2499;
+
+      const updatePricing = () => {
+        const total = basePrice * currentQty;
+        cartCtaText.textContent = `Add to Cart - $${total.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+      };
+
+      if (qtyInc && qtyDec && qtyVal) {
+        qtyInc.addEventListener('click', () => {
+          if (currentQty < 3) { // Max available stock
+            currentQty++;
+            qtyVal.textContent = currentQty;
+            updatePricing();
+          }
+        });
+
+        qtyDec.addEventListener('click', () => {
+          if (currentQty > 1) {
+            currentQty--;
+            qtyVal.textContent = currentQty;
+            updatePricing();
+          }
+        });
+      }
+
+      // Size switch adjustments
+      const sizeOptions = document.querySelectorAll('.size-opt');
+      sizeOptions.forEach(btn => {
+        btn.addEventListener('click', () => {
+          sizeOptions.forEach(b => {
+            b.classList.remove('ring-2', 'ring-primary');
+          });
+          btn.classList.add('ring-2', 'ring-primary');
+          const is48 = btn.dataset.size === '48';
+          basePrice = is48 ? 2649 : 2499;
+          priceDisplay.textContent = `$${basePrice.toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+          updatePricing();
+        });
+      });
+
+      // Color finish switcher
+      const colorOptions = document.querySelectorAll('.color-opt');
+      const colorLabel = document.getElementById('color-label');
+      colorOptions.forEach(btn => {
+        btn.addEventListener('click', () => {
+          colorOptions.forEach(b => b.classList.remove('ring-2', 'ring-primary'));
+          btn.classList.add('ring-2', 'ring-primary');
+          if (colorLabel) {
+            colorLabel.textContent = btn.dataset.color;
+          }
+        });
+      });
+
+      // Tab switcher
+      const tabTriggers = document.querySelectorAll('.tab-trigger');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      tabTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const target = trigger.dataset.tab;
+          
+          tabTriggers.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+            t.classList.add('text-on-surface-variant');
+          });
+
+          trigger.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-md');
+          trigger.classList.remove('text-on-surface-variant');
+
+          tabPanels.forEach(panel => {
+            if (panel.id === `tab-${target}`) {
+              panel.classList.remove('hidden');
+              panel.classList.add('flex');
+            } else {
+              panel.classList.add('hidden');
+              panel.classList.remove('flex');
+            }
+          });
+        });
+      });
+
+      // Thumbnail selection logic
+      const thumbNodes = document.querySelectorAll('.thumb-node');
+      const heroImg = document.getElementById('main-product-img');
+      thumbNodes.forEach(node => {
+        node.addEventListener('click', () => {
+          thumbNodes.forEach(n => n.classList.remove('ring-2', 'ring-primary'));
+          node.classList.add('ring-2', 'ring-primary');
+          if (heroImg) {
+            heroImg.style.opacity = '0.4';
+            setTimeout(() => {
+              heroImg.style.opacity = '1';
+            }, 150);
+          }
+        });
+      });
+
+      // Wishlist toggle
+      const wishlistBtn = document.getElementById('wishlist-btn');
+      if (wishlistBtn) {
+        wishlistBtn.addEventListener('click', () => {
+          const icon = wishlistBtn.querySelector('.material-symbols-outlined');
+          if (icon.textContent === 'favorite') {
+            icon.textContent = 'favorite_border';
+            wishlistBtn.classList.remove('text-primary');
+          } else {
+            icon.textContent = 'favorite';
+            wishlistBtn.classList.add('text-primary');
+          }
+        });
+      }
+
+      // Add to cart notification trigger feedback
+      const addBtn = document.getElementById('add-to-cart-btn');
+      if (addBtn) {
+        addBtn.addEventListener('click', () => {
+          const originalContent = addBtn.innerHTML;
+          addBtn.innerHTML = '<span class="material-symbols-outlined text-2xl animate-spin">autorenew</span><span>Encrypting Vault Allocation...</span>';
+          setTimeout(() => {
+            addBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">check_circle</span><span>Reserved to Cart</span>';
+            setTimeout(() => {
+              addBtn.innerHTML = originalContent;
+            }, 1800);
+          }, 700);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface py-space-3xl mt-space-3xl"><div class="max-w-[1920px] mx-auto px-margin-sm md:px-margin-md xl:px-margin flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md uppercase tracking-wider text-primary font-bold">LBOSS SHOP</span><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-bold">EST. 2027</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Next-generation hyper-luxury technology and precision lifestyle catalog engineered for elite collectors and visionaries. Surgical hardware, uncompromising bespoke aesthetics.</p><div class="flex flex-col gap-space-xs pt-space-xs"><span class="font-label-md text-label-md text-on-surface font-semibold">VIP Boss Club Access</span><p class="font-body-sm text-body-sm text-outline">Subscribe for encrypted drops & receive an immediate 10% private vault voucher.</p><form class="flex items-center gap-space-xs max-w-md pt-2"><input class="flex-1 bg-surface-container rounded-xl px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Enter encrypted terminal email" type="email"/><button class="px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md font-bold hover:bg-primary transition-colors" type="button">Claim</button></form></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Collections</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="electronics" href="#">Electronics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cyber-fashion" href="#">Cyber Fashion</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="precision-living" href="#">Precision Living</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#">Audio & Acoustics</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault-exclusives" href="#">Vault Exclusives</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Concierge</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="client-services" href="#">Private Client Advisory</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="global-transit" href="#">Encrypted Transit & Freight</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="bespoke-order" href="#">Bespoke Customization</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="warranty-vault" href="#">Lifetime Hardware Vault</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="support" href="#">Terminal Support</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface">Governance</span><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sustainability" href="#">Circular Metallurgy & Carbon</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="security-charter" href="#">Quantum Security Protocol</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="investor-relations" href="#">Investor Intelligence</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="legal" href="#">Legal & Sovereignty</a></nav></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase">Verified Nodes:</span><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="px-space-xs py-1 rounded bg-surface-container">Apple Pay</span><span class="px-space-xs py-1 rounded bg-surface-container">Crypto Vault</span><span class="px-space-xs py-1 rounded bg-surface-container">Visa Infinite</span><span class="px-space-xs py-1 rounded bg-surface-container">Mastercard Black</span></div></div><div class="font-body-sm text-body-sm text-outline text-center md:text-right">© 2027 LBOSS CORPORATION. ALL RIGHTS RESERVED. PRIVATE CATALOG PROTOCOL.</div></div></div></footer></body></html>
