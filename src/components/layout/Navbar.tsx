@@ -165,7 +165,7 @@ export const Navbar: React.FC = () => {
             {/* Brand Logo */}
             <Link to="/" className="flex items-center group cursor-pointer select-none">
               <img
-                src="/LBOSS-SHOP-logo-transparent-600.png"
+                src={theme === 'dark' ? '/LBOSS-SHOP-logo-transparent-600.png' : '/LBOSS-SHOP-logo-light-transparent-600.png'}
                 alt="LBOSS SHOP"
                 className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
               />

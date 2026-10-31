@@ -75,7 +75,7 @@ export const MobileNav: React.FC = () => {
               <div className="flex items-center justify-between pb-6 border-b border-[var(--border-subtle)]">
                 <Link to="/" onClick={closeMenu} className="flex items-center">
                   <img
-                    src="/LBOSS-SHOP-logo-transparent-600.png"
+                    src={theme === 'dark' ? '/LBOSS-SHOP-logo-transparent-600.png' : '/LBOSS-SHOP-logo-light-transparent-600.png'}
                     alt="LBOSS SHOP"
                     className="h-8 w-auto object-contain"
                   />
